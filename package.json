@@ -1,0 +1,26 @@
+{
+  "name": "chew_nodejs_token_generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThanhTrung2001/Chew_NodeJS_Token_Generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ThanhTrung2001/Chew_NodeJS_Token_Generator/issues"
+  },
+  "homepage": "https://github.com/ThanhTrung2001/Chew_NodeJS_Token_Generator#readme",
+  "dependencies": {
+    "agora-access-token": "^2.0.4",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
