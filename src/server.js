@@ -1,19 +1,18 @@
 const dotenv = require('dotenv');
-const express = require('express')
+const express = require('express');
 const path = require('path');
 const configViewEngine = require('./config/viewEngine');
-const app = express()
+const initWebRoute = require('./route/web');
+// const connection = require('./config/connectDB');
+const app = express();
 const port = 3000
 
+//setup view Engine
 configViewEngine(app)
 
-app.get('/', (req, res) => {
-    res.render('index.ejs')
-})
+//init web route
+initWebRoute(app)
 
-app.get('/about', (req, res) => {
-    res.send('AboutPage')
-})
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
