@@ -7,6 +7,9 @@ const initWebRoute = require('./route/web');
 const app = express();
 const port = 3000
 
+app.use(express.urlencoded({ extended: true })); // ho tro gui data len server (co the noi la goi toi body parser)
+app.use(express.json()); // neu ko co se khong the submit data tu form len server
+
 //setup view Engine
 configViewEngine(app)
 
