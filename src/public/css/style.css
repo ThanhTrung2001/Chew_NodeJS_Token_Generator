@@ -79,4 +79,14 @@ label {
 
 .btn-save {
     margin-top: 15px;
+    cursor: pointer;
+}
+
+.upload-file-container {
+    padding: 15px;
+    text-align: center;
+}
+
+.upload-file-container label {
+    display: block;
 }

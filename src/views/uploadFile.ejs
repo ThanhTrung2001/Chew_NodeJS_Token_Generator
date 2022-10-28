@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <title>NodeJS Basic</title>
+</head>
+
+<body>
+
+    <div class="topnav">
+        <a href="/">Home</a>
+        <a href="/upload" class="active">Upload File</a>
+    </div>
+
+    <div class="upload-file-container">
+        <form method="post" action="/upload-profile-pic" enctype="multipart/form-data">
+            <div>
+                <label>AVatar:</label>
+                <input type="file" name="profile_pic">
+            </div>
+            <div>
+                <button type="submit" class="btn-save">Save File</button>
+            </div>
+        </form>
+
+        <form method="post" action="/upload-multiple-images" enctype="multipart/form-data">
+            <div>
+                <label>Select multiple images:</label>
+                <input type="file" name="multiple_images" multiple>
+            </div>
+            <div>
+                <button type="submit" class="btn-upload-multiple-images">Save Files</button>
+            </div>
+        </form>
+    </div>
+
+
+</body>
+
+</html>
