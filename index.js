@@ -27,9 +27,9 @@ const generateRTCToken = (req, res) => {
     }
     // get role
     let role;
-    if (req.params.role === 'publisher') {
+    if (req.params.role === '1') {
         role = RtcRole.PUBLISHER;
-    } else if (req.params.role === 'audience') {
+    } else if (req.params.role === '2') {
         role = RtcRole.SUBSCRIBER
     } else {
         return res.status(500).json({ 'error': 'role is incorrect' });
