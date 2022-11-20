@@ -2,7 +2,7 @@ const express = require('express')
 const APIcontroller = require('../controller/APIController')
 const router = express.Router()
 
-const initWebRoute = (app) => {
+const initAPIRoute = (app) => {
     router.get('/', APIcontroller.getAllUsers) //method GET => read Data
     router.post('/create-user', APIcontroller.createNewUser)
     router.put('/update-user', APIcontroller.updateUser)
