@@ -10,4 +10,4 @@ const initWebRoute = (app) => {
     return app.use('/api/v1/', router)  //sử dụng default cho route, ví dụ nếu /âbc -> /abc/ là home, /abc/about là about
 }
 
-module.exports = initWebRoute;
+module.exports = initAPIRoute;
