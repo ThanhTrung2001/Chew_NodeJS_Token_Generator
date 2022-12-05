@@ -1,5 +1,5 @@
 # Chew_NodeJS_Token_Generator
 Tao file .env voi cac phan
-APP_ID=
-APP_CERTIFICATE=
+APP_ID=1f34d2fafcb94412a9939349ce282aad
+APP_CERTIFICATE=a26885dbbcda4b7297f66f16de59eae0
 PORT=8080
